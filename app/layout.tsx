@@ -1,12 +1,8 @@
 // src/app/layout.tsx
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import Header from '@/components/common/header';
+import './globals.css';
 
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700']
-});
 
 export const metadata: Metadata = {
   title: 'Go To Market - AI & Web Development Agency',
@@ -20,13 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body className={inter.className}>
+      <body>
         <Header />
-        <div className="bg-red-500 text-blue-500 p-4">Test Tailwind</div>
-
-        <main className="pt-20">
-          {children}
-        </main>
+        <main className="pt-20">{children}</main>
       </body>
     </html>
   );
