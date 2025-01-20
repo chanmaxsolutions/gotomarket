@@ -2,6 +2,7 @@
 import type { Metadata } from 'next';
 import Header from '@/components/common/header';
 import './globals.css';
+import { TranslationProvider } from '@/hooks/useTranslation';
 
 export const metadata: Metadata = {
   title: 'Go To Market - AI & Web Development Agency',
@@ -11,12 +12,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="de" suppressHydrationWarning>
       <body suppressHydrationWarning>
-        <Header />
-        <main className="pt-20">{children}</main>
+        <TranslationProvider>
+          <Header />
+          {children}
+        </TranslationProvider>
       </body>
     </html>
   );

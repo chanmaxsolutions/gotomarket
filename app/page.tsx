@@ -1,11 +1,18 @@
 // src/app/page.tsx
-export default function Page() {
+import HeroSection from '@/components/home/HeroSection';
+import StatsSection from '@/components/home/StatsSection';
+import AboutPreview from '@/components/home/AboutPreview';
+import ServicesOverview from '@/components/home/ServicesOverview';
+import TestimonialsSection from '@/components/home/TestimonialsSection';
+
+export default function Home() {
   return (
-    <div className="container mx-auto px-4">
-      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-8">
-        Welcome to Go To Market
-      </h1>
-      {/* Add other page content here */}
-    </div>
+    <main>
+      <HeroSection />
+      <StatsSection />
+      <ServicesOverview />
+      <AboutPreview />
+      <TestimonialsSection />
+    </main>
   );
 }
