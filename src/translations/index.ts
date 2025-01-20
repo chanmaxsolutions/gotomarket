@@ -7,6 +7,7 @@ export type TranslationKey =
     | 'nav.getStarted'
     | 'nav.webDev'
     | 'nav.ai'
+
     | 'hero.title.start'
     | 'hero.title.highlight1'
     | 'hero.title.middle'
@@ -14,6 +15,7 @@ export type TranslationKey =
     | 'hero.subtitle'
     | 'hero.cta.primary'
     | 'hero.cta.secondary'
+
     | 'services.title'
     | 'services.subtitle'
     | 'services.description'
@@ -21,6 +23,7 @@ export type TranslationKey =
     | 'services.webdev.description'
     | 'services.ai.title'
     | 'services.ai.description'
+
     | 'stats.projects'
     | 'stats.satisfaction'
     | 'stats.experience'
@@ -29,6 +32,7 @@ export type TranslationKey =
     | 'about.subtitle'
     | 'about.description'
     | 'about.cta'
+
     | 'testimonials.title'
     | 'testimonials.subtitle'
     | 'testimonials.description'
@@ -52,6 +56,7 @@ export type TranslationKey =
     | 'testimonials.5.role'
     | 'testimonials.5.company'
     | 'testimonials.5.content'
+
     | 'process.title'
     | 'process.subtitle'
     | 'process.description'
@@ -67,9 +72,22 @@ export type TranslationKey =
     | 'process.step5.description'
     | 'process.step6.title'
     | 'process.step6.description'
+
     | 'cta.title'
     | 'cta.description'
-    | 'cta.button';
+    | 'cta.button'
+
+    | 'footer.description'
+    | 'footer.quickLinks'
+    | 'footer.about'
+    | 'footer.services'
+    | 'footer.contact'
+    | 'footer.webDev'
+    | 'footer.ai'
+    | 'footer.address'
+    | 'footer.copyright'
+    | 'footer.privacy'
+    | 'footer.terms';
 
 export const translations = {
     en: {
@@ -156,6 +174,18 @@ export const translations = {
         'cta.description': 'Take the first step towards innovation. Lets discuss your project and create something extraordinary together.',
         'cta.button': 'Get Your Free Quote',
 
+        'footer.description': 'Innovative web development and AI solutions for modern businesses.',
+        'footer.quickLinks': 'Quick Links',
+        'footer.about': 'About Us',
+        'footer.services': 'Services',
+        'footer.contact': 'Contact',
+        'footer.webDev': 'Web Development',
+        'footer.ai': 'AI Solutions',
+        'footer.address': '123 Innovation Street, Tech City, 12345 Germany',
+        'footer.copyright': 'All rights reserved.',
+        'footer.privacy': 'Privacy Policy',
+        'footer.terms': 'Terms of Service',
+
     },
     de: {
         'nav.home': 'Startseite',
@@ -240,6 +270,18 @@ export const translations = {
         'cta.title': 'Innovation beginnt mit einem Gespräch',
         'cta.description': 'Machen Sie den ersten Schritt in Richtung Innovation. Lassen Sie uns Ihr Projekt besprechen und gemeinsam etwas Außergewöhnliches schaffen.',
         'cta.button': 'Kostenloses Angebot',
+
+        'footer.description': 'Innovative Webentwicklung und KI-Lösungen für moderne Unternehmen.',
+        'footer.quickLinks': 'Schnellzugriff',
+        'footer.about': 'Über Uns',
+        'footer.services': 'Leistungen',
+        'footer.contact': 'Kontakt',
+        'footer.webDev': 'Webentwicklung',
+        'footer.ai': 'KI-Lösungen',
+        'footer.address': '123 Innovationsstraße, Tech Stadt, 12345 Deutschland',
+        'footer.copyright': 'Alle Rechte vorbehalten.',
+        'footer.privacy': 'Datenschutz',
+        'footer.terms': 'AGB',
 
     }
 } as const;

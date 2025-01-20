@@ -1,6 +1,7 @@
 // src/app/layout.tsx
 import type { Metadata } from 'next';
 import Header from '@/components/common/header';
+import Footer from '@/components/common/footer';
 import './globals.css';
 import { TranslationProvider } from '@/hooks/useTranslation';
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <TranslationProvider>
           <Header />
           {children}
+          <Footer />
         </TranslationProvider>
       </body>
     </html>

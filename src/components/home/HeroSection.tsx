@@ -13,20 +13,20 @@ const HeroSection = () => {
     return (
         <section className="relative flex items-center justify-center min-h-[100vh] pt-48 pb-20 overflow-hidden">
             <div className="container">
-                <div className="max-w-4xl mx-auto text-center space-y-8">
+                <div className="max-w-5xl mx-auto text-center space-y-8 ">
                     {/* Main Heading */}
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.1 }}
-                        className="text-5xl md:text-6xl lg:text-8xl font-bold tracking-tighter"
+                        className="text-5xl md:text-6xl lg:text-8xl font-bold tracking-tighter leading-3"
                     >
                         {t('hero.title.start')}
                         <span className="">{t('hero.title.highlight1')}</span>
                         {t('hero.title.middle')}
                         <span className="text-accent">{t('hero.title.highlight2')}</span>
-
                     </motion.h1>
+
 
                     {/* Subtitle */}
                     <motion.p
