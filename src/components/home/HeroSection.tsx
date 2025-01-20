@@ -19,12 +19,12 @@ const HeroSection = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.1 }}
-                        className="text-5xl md:text-6xl lg:text-8xl font-bold tracking-tighter leading-3"
+                        className="text-5xl md:text-6xl lg:text-9xl font-bold tracking-tighter"
                     >
                         {t('hero.title.start')}
-                        <span className="">{t('hero.title.highlight1')}</span>
+                        <span className="tracking-tighter ">{t('hero.title.highlight1')}</span>
                         {t('hero.title.middle')}
-                        <span className="text-accent">{t('hero.title.highlight2')}</span>
+                        <span className="text-accent tracking-tighter">{t('hero.title.highlight2')}</span>
                     </motion.h1>
 
 
@@ -33,7 +33,7 @@ const HeroSection = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.1, delay: 0.2 }}
-                        className="text-xl md:text-2xl text-neutral-medium font-light max-w-3xl mx-auto"
+                        className="text-xl md:text-3xl text-gray-500 font-light tracking-tighter max-w-3xl mx-auto"
                     >
                         {t('hero.subtitle')}
                     </motion.p>

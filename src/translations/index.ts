@@ -101,7 +101,7 @@ export const translations = {
 
 
         'hero.title.start': 'Save ',
-        'hero.title.highlight1': 'Time and Money',
+        'hero.title.highlight1': 'Time, Money',
         'hero.title.middle': ' with ',
         'hero.title.highlight2': 'AI Agents',
         'hero.subtitle': 'We create cutting-edge web solutions and AI integrations that drive business growth and innovation.',
