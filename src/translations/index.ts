@@ -7,7 +7,10 @@ export type TranslationKey =
     | 'nav.getStarted'
     | 'nav.webDev'
     | 'nav.ai'
-    | 'hero.title'
+    | 'hero.title.start'
+    | 'hero.title.highlight1'
+    | 'hero.title.middle'
+    | 'hero.title.highlight2'
     | 'hero.subtitle'
     | 'hero.cta.primary'
     | 'hero.cta.secondary'
@@ -48,7 +51,25 @@ export type TranslationKey =
     | 'testimonials.5.author'
     | 'testimonials.5.role'
     | 'testimonials.5.company'
-    | 'testimonials.5.content';
+    | 'testimonials.5.content'
+    | 'process.title'
+    | 'process.subtitle'
+    | 'process.description'
+    | 'process.step1.title'
+    | 'process.step1.description'
+    | 'process.step2.title'
+    | 'process.step2.description'
+    | 'process.step3.title'
+    | 'process.step3.description'
+    | 'process.step4.title'
+    | 'process.step4.description'
+    | 'process.step5.title'
+    | 'process.step5.description'
+    | 'process.step6.title'
+    | 'process.step6.description'
+    | 'cta.title'
+    | 'cta.description'
+    | 'cta.button';
 
 export const translations = {
     en: {
@@ -60,7 +81,11 @@ export const translations = {
         'nav.webDev': 'Web Development',
         'nav.ai': 'AI Solutions',
 
-        'hero.title': 'Transforming Ideas into Digital Excellence',
+
+        'hero.title.start': 'Save ',
+        'hero.title.highlight1': 'Time and Money',
+        'hero.title.middle': ' with ',
+        'hero.title.highlight2': 'AI Agents',
         'hero.subtitle': 'We create cutting-edge web solutions and AI integrations that drive business growth and innovation.',
         'hero.cta.primary': 'Get Started',
         'hero.cta.secondary': 'Our Services',
@@ -112,8 +137,24 @@ export const translations = {
         'testimonials.5.company': 'DataFlow Systems',
         'testimonials.5.content': 'Their teams expertise in both web development and AI created a seamless solution that perfectly aligned with our business goals.',
 
+        'process.title': 'Our Process',
+        'process.subtitle': 'How we work', 'process.description': 'A streamlined approach to transforming your digital presence, from initial concept to successful execution.',
+        'process.step1.title': 'Discovery & Planning',
+        'process.step1.description': 'We analyze your requirements and plan the perfect solution for your needs.',
+        'process.step2.title': 'Design & Architecture',
+        'process.step2.description': 'Creating the blueprint for your success with modern design principles.',
+        'process.step3.title': 'Development',
+        'process.step3.description': 'Building your solution with cutting-edge technologies and best practices.',
+        'process.step4.title': 'Testing & QA',
+        'process.step4.description': 'Rigorous testing to ensure quality and reliability.',
+        'process.step5.title': 'Deployment',
+        'process.step5.description': 'Smooth deployment and integration of your solution.',
+        'process.step6.title': 'Support & Maintenance',
+        'process.step6.description': 'Ongoing support and updates to keep your solution running perfectly.',
 
-
+        'cta.title': 'Innovation Begins With A Conversation',
+        'cta.description': 'Take the first step towards innovation. Lets discuss your project and create something extraordinary together.',
+        'cta.button': 'Get Your Free Quote',
 
     },
     de: {
@@ -125,7 +166,11 @@ export const translations = {
         'nav.webDev': 'Webentwicklung',
         'nav.ai': 'KI-Lösungen',
 
-        'hero.title': 'Ideen in digitale Exzellenz verwandeln',
+        'hero.title.start': 'Sparen ',
+        'hero.title.highlight1': 'Sie Zeit und Geld',
+        'hero.title.middle': ' mit ',
+        'hero.title.highlight2': 'KI-Agenten',
+        'hero.title.end': ' trifft',
         'hero.subtitle': 'Wir entwickeln modernste Weblösungen und KI-Integrationen, die Geschäftswachstum und Innovation vorantreiben.',
         'hero.cta.primary': 'Loslegen',
         'hero.cta.secondary': 'Unsere Leistungen',
@@ -177,6 +222,24 @@ export const translations = {
         'testimonials.5.company': 'DataFlow Systems',
         'testimonials.5.content': 'Die Expertise des Teams in Webentwicklung und KI schuf eine nahtlose Lösung, die perfekt auf unsere Geschäftsziele abgestimmt war.',
 
+        'process.title': 'Unser Prozess',
+        'process.subtitle': 'So arbeiten wir', 'process.description': 'Ein optimierter Ansatz zur Transformation Ihrer digitalen Präsenz, vom ersten Konzept bis zur erfolgreichen Umsetzung.',
+        'process.step1.title': 'Entdeckung & Planung',
+        'process.step1.description': 'Wir analysieren Ihre Anforderungen und planen die perfekte Lösung.',
+        'process.step2.title': 'Design & Architektur',
+        'process.step2.description': 'Erstellen der Blaupause für Ihren Erfolg mit modernen Designprinzipien.',
+        'process.step3.title': 'Entwicklung',
+        'process.step3.description': 'Entwicklung Ihrer Lösung mit modernsten Technologien.',
+        'process.step4.title': 'Testing & QS',
+        'process.step4.description': 'Gründliche Tests für Qualität und Zuverlässigkeit.',
+        'process.step5.title': 'Bereitstellung',
+        'process.step5.description': 'Reibungslose Bereitstellung und Integration Ihrer Lösung.',
+        'process.step6.title': 'Support & Wartung',
+        'process.step6.description': 'Laufende Unterstützung und Updates für optimale Funktion.',
+
+        'cta.title': 'Innovation beginnt mit einem Gespräch',
+        'cta.description': 'Machen Sie den ersten Schritt in Richtung Innovation. Lassen Sie uns Ihr Projekt besprechen und gemeinsam etwas Außergewöhnliches schaffen.',
+        'cta.button': 'Kostenloses Angebot',
 
     }
 } as const;

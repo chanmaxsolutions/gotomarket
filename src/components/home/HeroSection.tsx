@@ -13,22 +13,26 @@ const HeroSection = () => {
     return (
         <section className="relative flex items-center justify-center min-h-[100vh] pt-48 pb-20 overflow-hidden">
             <div className="container">
-                <div className="max-w-5xl mx-auto text-center space-y-8">
+                <div className="max-w-4xl mx-auto text-center space-y-8">
                     {/* Main Heading */}
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 2, y: 0 }}
+                        animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.1 }}
-                        className="text-5xl md:text-6xl lg:text-8xl font-bold tracking-tighter text-neutral-dark"
+                        className="text-5xl md:text-6xl lg:text-8xl font-bold tracking-tighter"
                     >
-                        {t('hero.title')}
+                        {t('hero.title.start')}
+                        <span className="">{t('hero.title.highlight1')}</span>
+                        {t('hero.title.middle')}
+                        <span className="text-accent">{t('hero.title.highlight2')}</span>
+
                     </motion.h1>
 
                     {/* Subtitle */}
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.2, delay: 0.1 }}
+                        transition={{ duration: 0.1, delay: 0.2 }}
                         className="text-xl md:text-2xl text-neutral-medium font-light max-w-3xl mx-auto"
                     >
                         {t('hero.subtitle')}
@@ -38,7 +42,7 @@ const HeroSection = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.3, delay: 0.2 }}
+                        transition={{ duration: 0.1, delay: 0.3 }}
                         className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8"
                     >
                         <Link

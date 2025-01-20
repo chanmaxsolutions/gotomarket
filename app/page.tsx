@@ -4,6 +4,8 @@ import StatsSection from '@/components/home/StatsSection';
 import AboutPreview from '@/components/home/AboutPreview';
 import ServicesOverview from '@/components/home/ServicesOverview';
 import TestimonialsSection from '@/components/home/TestimonialsSection';
+import ProcessSection from '@/components/home/ProcessSection';
+import CTASection from '@/components/home/CTASection';
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <ServicesOverview />
       <AboutPreview />
       <TestimonialsSection />
+      <ProcessSection />
+      <CTASection />
     </main>
   );
 }
