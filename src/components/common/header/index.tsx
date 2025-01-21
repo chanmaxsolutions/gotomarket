@@ -103,7 +103,7 @@ export default function Header() {
                                     <div>
                                         <button
                                             onClick={() => toggleDropdown(item.key)}
-                                            className="flex items-center text-gray-500 hover:text-primary transition-colors duration-200 text-xl tracking-tighter"
+                                            className="flex items-center text-gray-800 hover:text-primary transition-colors duration-200 text-xl tracking-tighter"
                                         >
                                             {t(item.key)}
                                             <MotionSpan
@@ -129,7 +129,7 @@ export default function Header() {
                                                         <Link
                                                             key={subitem.key}
                                                             href={subitem.href}
-                                                            className="block px-4 text-xl tracking-tighter py-2 text-gray-500 hover:text-primary hover:bg-gray-50 transition-colors duration-200"
+                                                            className="block px-4 text-xl tracking-tighter py-2 text-gray-800 hover:text-primary hover:bg-gray-50 transition-colors duration-200"
                                                             onClick={() => setActiveDropdown(null)}
                                                         >
                                                             {t(subitem.key)}
@@ -142,7 +142,7 @@ export default function Header() {
                                 ) : (
                                     <Link
                                         href={item.href}
-                                        className="text-gray-500 hover:text-primary transition-colors duration-200 text-xl tracking-tighter"
+                                        className="text-gray-800 hover:text-primary transition-colors duration-200 text-xl tracking-tighter"
                                     >
                                         {t(item.key)}
                                     </Link>
@@ -153,7 +153,7 @@ export default function Header() {
                         {/* Language Switcher */}
                         <button
                             onClick={toggleLanguage}
-                            className="flex items-center text-gray-500 hover:text-primary transition-colors duration-200 text-xl tracking-tighter"
+                            className="flex items-center text-gray-800 hover:text-primary transition-colors duration-200 text-xl tracking-tighter"
                         >
                             <Globe className="h-5 w-5 mr-1" />
                             <span className="text-lg uppercase">{language}</span>
@@ -171,12 +171,12 @@ export default function Header() {
                     <div className="md:hidden flex items-center space-x-4">
                         <button
                             onClick={toggleLanguage}
-                            className="flex items-center text-gray-500 hover:text-primary transition-colors duration-200"
+                            className="flex items-center text-gray-800 hover:text-primary transition-colors duration-200"
                         >
                             <Globe className="h-5 w-5" />
                         </button>
                         <button
-                            className="p-2 text-gray-500 hover:text-primary"
+                            className="p-2 text-gray-800 hover:text-primary"
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
                             aria-label="Toggle menu"
                         >
@@ -205,7 +205,7 @@ export default function Header() {
                                             <div>
                                                 <button
                                                     onClick={() => toggleDropdown(item.key)}
-                                                    className="flex items-center justify-between w-full px-4 py-2 text-gray-500 hover:text-primary tracking-tighter"
+                                                    className="flex items-center justify-between w-full px-4 py-2 text-gray-800 hover:text-primary tracking-tighter"
                                                 >
                                                     <span className="text-xl">{t(item.key)}</span>
                                                     <MotionSpan
@@ -228,7 +228,7 @@ export default function Header() {
                                                                 <Link
                                                                     key={subitem.key}
                                                                     href={subitem.href}
-                                                                    className="block py-2 text-gray-500 hover:text-primary text-xl tracking-tighter"
+                                                                    className="block py-2 text-gray-800 hover:text-primary text-xl tracking-tighter"
                                                                     onClick={closeMenu}
                                                                 >
                                                                     {t(subitem.key)}
@@ -241,7 +241,7 @@ export default function Header() {
                                         ) : (
                                             <Link
                                                 href={item.href}
-                                                className="block px-4 py-2 text-gray-500 hover:text-primary text-xl tracking-tighter"
+                                                className="block px-4 py-2 text-gray-800 hover:text-primary text-xl tracking-tighter"
                                                 onClick={closeMenu}
                                             >
                                                 {t(item.key)}
