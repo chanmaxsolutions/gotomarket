@@ -77,8 +77,8 @@ export default function Header() {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-white/80 backdrop-blur-lg border-b border-neutral-light/50 supports-[backdrop-filter]:bg-white/60'
-                    : 'bg-white border-b border-neutral-light'
+                ? 'bg-white/80 backdrop-blur-lg border-b border-neutral-light/50 supports-[backdrop-filter]:bg-white/80'
+                : 'bg-white border-b border-neutral-light'
                 }`}
         >
             <div className="container">
@@ -121,8 +121,8 @@ export default function Header() {
                                                     exit={{ opacity: 0, y: -10 }}
                                                     transition={{ duration: 0.2 }}
                                                     className={`absolute top-full left-0 mt-2 w-52 rounded-lg py-2 ${isScrolled
-                                                            ? 'bg-white/80 backdrop-blur-lg supports-[backdrop-filter]:bg-white/60'
-                                                            : 'bg-white'
+                                                        ? 'bg-white/80 backdrop-blur-lg supports-[backdrop-filter]:bg-white/60'
+                                                        : 'bg-white'
                                                         } shadow-lg`}
                                                 >
                                                     {item.submenu.map((subitem) => (
@@ -194,8 +194,8 @@ export default function Header() {
                             exit={{ opacity: 0, height: 0 }}
                             transition={{ duration: 0.2 }}
                             className={`md:hidden border-t overflow-hidden ${isScrolled
-                                    ? 'bg-white/80 backdrop-blur-lg supports-[backdrop-filter]:bg-white/60'
-                                    : 'bg-white'
+                                ? 'bg-white/80 backdrop-blur-lg supports-[backdrop-filter]:bg-white/60'
+                                : 'bg-white'
                                 }`}
                         >
                             <nav className="flex flex-col space-y-4 py-4">
