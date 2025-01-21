@@ -779,10 +779,11 @@ export const translations = {
         'services.webdev.page.description': 'Maßgeschneiderte Weblösungen für moderne Unternehmen',
 
         'services.webdev.features.title': 'Weblösungen',
+        'services.webdev.features.subtitle': 'Alles, was Sie brauchen',
         'services.webdev.features.description': 'Umfassende Webentwicklungslösungen, maßgeschneidert für Ihre spezifischen Anforderungen',
-        'services.webdev.features.custom.title': 'Individuelle Website-Entwicklung',
+        'services.webdev.features.custom.title': 'Website-Entwicklung',
         'services.webdev.features.custom.description': 'Maßgeschneiderte Websites, die perfekt zu Ihrer Marke und Ihren Anforderungen passen',
-        'services.webdev.features.application.title': 'Webanwendungsentwicklung',
+        'services.webdev.features.application.title': 'Web-App-Entwicklung',
         'services.webdev.features.application.description': 'Robuste und skalierbare Webanwendungen mit modernen Technologien',
         'services.webdev.features.ecommerce.title': 'E-Commerce-Entwicklung',
         'services.webdev.features.ecommerce.description': 'Leistungsstarke Online-Shops mit nahtlosem Einkaufserlebnis',
