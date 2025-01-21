@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                         <div className="space-y-6">
                             <Link href="/" className="block">
                                 <Image
-                                    src="https://res.cloudinary.com/dqeujzydw/image/upload/v1737271850/Logo_jtwdnz.svg"
+                                    src="https://res.cloudinary.com/dqeujzydw/image/upload/v1737469204/Artboard_2_tan3zh.svg"
                                     alt="Company Logo"
                                     width={150}
                                     height={40}

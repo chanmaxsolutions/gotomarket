@@ -300,6 +300,95 @@ export type TranslationKey =
     | 'services.ai.faq.collaboration.q3'
     | 'services.ai.faq.collaboration.a3'
 
+    | 'legal.imprint.title'
+    | 'legal.imprint.description'
+    | 'legal.imprint.company.title'
+    | 'legal.imprint.company.name'
+    | 'legal.imprint.company.street'
+    | 'legal.imprint.company.city'
+    | 'legal.imprint.company.country'
+    | 'legal.imprint.contact.title'
+    | 'legal.imprint.contact.phone'
+    | 'legal.imprint.contact.email'
+    | 'legal.imprint.contact.web'
+    | 'legal.imprint.registration.title'
+    | 'legal.imprint.registration.court'
+    | 'legal.imprint.registration.number'
+    | 'legal.imprint.registration.vatid'
+    | 'legal.imprint.responsible.title'
+    | 'legal.imprint.responsible.name'
+    | 'legal.imprint.responsible.position'
+    | 'legal.imprint.responsible.email'
+    | 'legal.imprint.disclaimer.title'
+    | 'legal.imprint.disclaimer.content'
+
+    | 'legal.privacy.title'
+    | 'legal.privacy.description'
+    | 'legal.privacy.general.title'
+    | 'legal.privacy.general.intro'
+    | 'legal.privacy.general.controller'
+    | 'legal.privacy.general.dpo'
+    | 'legal.privacy.collection.title'
+    | 'legal.privacy.collection.purpose'
+    | 'legal.privacy.collection.types.title'
+    | 'legal.privacy.collection.types.personal'
+    | 'legal.privacy.collection.types.usage'
+    | 'legal.privacy.collection.types.technical'
+    | 'legal.privacy.cookies.title'
+    | 'legal.privacy.cookies.description'
+    | 'legal.privacy.cookies.types.title'
+    | 'legal.privacy.cookies.types.essential'
+    | 'legal.privacy.cookies.types.analytics'
+    | 'legal.privacy.cookies.types.marketing'
+    | 'legal.privacy.thirdparty.title'
+    | 'legal.privacy.thirdparty.description'
+    | 'legal.privacy.thirdparty.services.analytics'
+    | 'legal.privacy.thirdparty.services.social'
+    | 'legal.privacy.thirdparty.services.payment'
+    | 'legal.privacy.rights.title'
+    | 'legal.privacy.rights.intro'
+    | 'legal.privacy.rights.access'
+    | 'legal.privacy.rights.rectification'
+    | 'legal.privacy.rights.erasure'
+    | 'legal.privacy.rights.restriction'
+    | 'legal.privacy.rights.portability'
+    | 'legal.privacy.rights.object'
+    | 'legal.privacy.security.title'
+    | 'legal.privacy.security.measures'
+    | 'legal.privacy.security.encryption'
+    | 'legal.privacy.security.staff'
+
+    | 'legal.terms.title'
+    | 'legal.terms.description'
+    | 'legal.terms.general.title'
+    | 'legal.terms.general.scope'
+    | 'legal.terms.general.validity'
+    | 'legal.terms.services.title'
+    | 'legal.terms.services.description'
+    | 'legal.terms.services.webdev'
+    | 'legal.terms.services.ai'
+    | 'legal.terms.services.consulting'
+    | 'legal.terms.contract.title'
+    | 'legal.terms.contract.conclusion.title'
+    | 'legal.terms.contract.conclusion.content'
+    | 'legal.terms.contract.duration.title'
+    | 'legal.terms.contract.duration.content'
+    | 'legal.terms.payment.title'
+    | 'legal.terms.payment.prices'
+    | 'legal.terms.payment.terms'
+    | 'legal.terms.payment.methods'
+    | 'legal.terms.obligations.title'
+    | 'legal.terms.obligations.provider.title'
+    | 'legal.terms.obligations.provider.content'
+    | 'legal.terms.obligations.client.title'
+    | 'legal.terms.obligations.client.content'
+    | 'legal.terms.liability.title'
+    | 'legal.terms.liability.limitation'
+    | 'legal.terms.liability.exclusions'
+    | 'legal.terms.final.title'
+    | 'legal.terms.final.jurisdiction'
+    | 'legal.terms.final.severability'
+
 export const translations = {
     en: {
         'nav.home': 'Home',
@@ -637,6 +726,116 @@ export const translations = {
 
         'services.ai.faq.collaboration.q3': 'How do you handle data privacy and security?',
         'services.ai.faq.collaboration.a3': 'We follow strict data protection protocols and comply with GDPR and other relevant privacy regulations, ensuring your data remains secure.',
+
+
+
+        'legal.imprint.title': 'Imprint',
+        'legal.imprint.description': 'Legal information about our company',
+
+        'legal.imprint.company.title': 'Company Information',
+        'legal.imprint.company.name': 'Company Name GmbH',
+        'legal.imprint.company.street': 'Example Street 123',
+        'legal.imprint.company.city': '80333 Munich',
+        'legal.imprint.company.country': 'Germany',
+
+        'legal.imprint.contact.title': 'Contact Information',
+        'legal.imprint.contact.phone': 'Phone',
+        'legal.imprint.contact.email': 'Email',
+        'legal.imprint.contact.web': 'Website',
+
+        'legal.imprint.registration.title': 'Registration Information',
+        'legal.imprint.registration.court': 'Registration Court',
+        'legal.imprint.registration.number': 'Registration Number',
+        'legal.imprint.registration.vatid': 'VAT ID',
+
+        'legal.imprint.responsible.title': 'Responsible for Content',
+        'legal.imprint.responsible.name': 'John Doe',
+        'legal.imprint.responsible.position': 'Managing Director',
+        'legal.imprint.responsible.email': 'john.doe@company.de',
+
+        'legal.imprint.disclaimer.title': 'Legal Notice',
+        'legal.imprint.disclaimer.content': 'According to § 5 TMG, the content of this website has been carefully created and reviewed. However, we cannot guarantee the accuracy, completeness, and timeliness of the content provided.',
+
+        'legal.privacy.title': 'Privacy Policy',
+        'legal.privacy.description': 'Information about how we handle your data',
+
+        'legal.privacy.general.title': 'General Information',
+        'legal.privacy.general.intro': 'Your privacy is important to us. This privacy policy explains how we collect, use, and protect your personal data.',
+        'legal.privacy.general.controller': 'The data controller responsible for this website is Company Name GmbH, Example Street 123, 80333 Munich.',
+        'legal.privacy.general.dpo': 'Our Data Protection Officer can be reached at: privacy@company.de',
+
+        'legal.privacy.collection.title': 'Data Collection & Processing',
+        'legal.privacy.collection.purpose': 'We collect and process your personal data only for specific purposes and with a legal basis under GDPR.',
+        'legal.privacy.collection.types.title': 'Types of Data We Collect',
+        'legal.privacy.collection.types.personal': 'Personal data (name, email, phone number) when you contact us or use our services',
+        'legal.privacy.collection.types.usage': 'Usage data (pages visited, time spent) to improve our services',
+        'legal.privacy.collection.types.technical': 'Technical data (IP address, browser type) necessary for website operation',
+
+        'legal.privacy.cookies.title': 'Cookies & Tracking',
+        'legal.privacy.cookies.description': 'We use cookies and similar technologies to improve your experience on our website.',
+        'legal.privacy.cookies.types.title': 'Types of Cookies We Use',
+        'legal.privacy.cookies.types.essential': 'Essential cookies: Required for basic website functionality',
+        'legal.privacy.cookies.types.analytics': 'Analytics cookies: Help us understand how visitors use our website',
+        'legal.privacy.cookies.types.marketing': 'Marketing cookies: Used to deliver relevant advertisements (only with your consent)',
+
+        'legal.privacy.thirdparty.title': 'Third-party Services',
+        'legal.privacy.thirdparty.description': 'We use selected third-party services to enhance our website functionality.',
+        'legal.privacy.thirdparty.services.analytics': 'Google Analytics: We use Google Analytics to analyze website traffic',
+        'legal.privacy.thirdparty.services.social': 'Social Media: Integration of social media features',
+        'legal.privacy.thirdparty.services.payment': 'Payment Processing: Secure payment processing through certified providers',
+
+        'legal.privacy.rights.title': 'Your Rights Under GDPR',
+        'legal.privacy.rights.intro': 'Under GDPR, you have several rights regarding your personal data:',
+        'legal.privacy.rights.access': 'Right to access your personal data',
+        'legal.privacy.rights.rectification': 'Right to correct inaccurate personal data',
+        'legal.privacy.rights.erasure': 'Right to erasure ("right to be forgotten")',
+        'legal.privacy.rights.restriction': 'Right to restrict processing',
+        'legal.privacy.rights.portability': 'Right to data portability',
+        'legal.privacy.rights.object': 'Right to object to processing',
+
+        'legal.privacy.security.title': 'Data Security',
+        'legal.privacy.security.measures': 'We implement appropriate technical and organizational measures to ensure data security.',
+        'legal.privacy.security.encryption': 'All data is transmitted using secure SSL encryption.',
+        'legal.privacy.security.staff': 'Our staff is trained in data protection and bound by confidentiality agreements.',
+
+        'legal.terms.title': 'Terms of Service',
+        'legal.terms.description': 'General terms and conditions for our services',
+
+        'legal.terms.general.title': 'General Provisions',
+        'legal.terms.general.scope': 'These terms and conditions govern all business relationships between us and our clients.',
+        'legal.terms.general.validity': 'Any deviating terms and conditions of the client shall not apply unless explicitly agreed upon in writing.',
+
+        'legal.terms.services.title': 'Services',
+        'legal.terms.services.description': 'We offer the following services in the field of web development and AI solutions:',
+        'legal.terms.services.webdev': 'Development of websites, web applications, and custom software solutions',
+        'legal.terms.services.ai': 'AI integration, chatbot development, and automation solutions',
+        'legal.terms.services.consulting': 'Technical consulting and project management',
+
+        'legal.terms.contract.title': 'Contract Terms',
+        'legal.terms.contract.conclusion.title': 'Contract Conclusion',
+        'legal.terms.contract.conclusion.content': 'The contract is concluded upon our written confirmation of the order or upon commencement of service provision.',
+        'legal.terms.contract.duration.title': 'Contract Duration',
+        'legal.terms.contract.duration.content': 'The contract duration is determined by the individual project scope or service agreement.',
+
+        'legal.terms.payment.title': 'Pricing and Payment',
+        'legal.terms.payment.prices': 'All prices are in Euro and do not include applicable VAT.',
+        'legal.terms.payment.terms': 'Payments are due within 14 days of invoice date without deduction.',
+        'legal.terms.payment.methods': 'We accept bank transfers and other specified payment methods.',
+
+        'legal.terms.obligations.title': 'Rights and Obligations',
+        'legal.terms.obligations.provider.title': 'Our Obligations',
+        'legal.terms.obligations.provider.content': 'We commit to providing our services professionally and according to current technical standards.',
+        'legal.terms.obligations.client.title': 'Client Obligations',
+        'legal.terms.obligations.client.content': 'The client shall provide all necessary information and materials in a timely manner.',
+
+        'legal.terms.liability.title': 'Liability',
+        'legal.terms.liability.limitation': 'Our liability is limited to cases of intent and gross negligence.',
+        'legal.terms.liability.exclusions': 'Liability for slight negligence is excluded unless it concerns essential contractual obligations.',
+
+        'legal.terms.final.title': 'Final Provisions',
+        'legal.terms.final.jurisdiction': 'Place of jurisdiction is Munich, Germany.',
+        'legal.terms.final.severability': 'Should individual provisions be invalid, the remaining provisions shall remain unaffected.',
+
 
     },
     de: {
@@ -983,6 +1182,112 @@ export const translations = {
         'services.ai.faq.collaboration.a3': 'Wir folgen strengen Datenschutzprotokollen und erfüllen die DSGVO sowie andere relevante Datenschutzbestimmungen, um die Sicherheit Ihrer Daten zu gewährleisten.',
 
 
+        'legal.imprint.title': 'Impressum',
+        'legal.imprint.description': 'Rechtliche Informationen über unser Unternehmen',
+
+        'legal.imprint.company.title': 'Angaben gemäß § 5 TMG',
+        'legal.imprint.company.name': 'Firmenname GmbH',
+        'legal.imprint.company.street': 'Beispielstraße 123',
+        'legal.imprint.company.city': '80333 München',
+        'legal.imprint.company.country': 'Deutschland',
+
+        'legal.imprint.contact.title': 'Kontakt',
+        'legal.imprint.contact.phone': 'Telefon',
+        'legal.imprint.contact.email': 'E-Mail',
+        'legal.imprint.contact.web': 'Website',
+
+        'legal.imprint.registration.title': 'Registereintrag',
+        'legal.imprint.registration.court': 'Registergericht',
+        'legal.imprint.registration.number': 'Handelsregisternummer',
+        'legal.imprint.registration.vatid': 'Umsatzsteuer-ID',
+
+        'legal.imprint.responsible.title': 'Inhaltlich verantwortlich',
+        'legal.imprint.responsible.name': 'John Doe',
+        'legal.imprint.responsible.position': 'Geschäftsführer',
+        'legal.imprint.responsible.email': 'john.doe@company.de',
+
+        'legal.imprint.disclaimer.title': 'Rechtlicher Hinweis',
+        'legal.imprint.disclaimer.content': 'Gemäß § 5 TMG wurden die Inhalte dieser Website sorgfältig erstellt und geprüft. Wir können jedoch keine Garantie für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Inhalte übernehmen.',
+
+        'legal.privacy.title': 'Datenschutzerklärung',
+        'legal.privacy.description': 'Informationen über den Umgang mit Ihren Daten',
+
+        'legal.privacy.general.title': 'Allgemeine Informationen',
+        'legal.privacy.general.intro': 'Der Schutz Ihrer Privatsphäre ist uns wichtig. Diese Datenschutzerklärung erläutert, wie wir Ihre personenbezogenen Daten erheben, verwenden und schützen.',
+        'legal.privacy.general.controller': 'Verantwortlicher für diese Website ist die Firmenname GmbH, Beispielstraße 123, 80333 München.',
+        'legal.privacy.general.dpo': 'Unser Datenschutzbeauftragter ist erreichbar unter: datenschutz@firma.de',
+
+        'legal.privacy.collection.title': 'Datenerhebung & -verarbeitung',
+        'legal.privacy.collection.purpose': 'Wir erheben und verarbeiten Ihre personenbezogenen Daten nur für bestimmte Zwecke und mit einer Rechtsgrundlage gemäß DSGVO.',
+        'legal.privacy.collection.types.title': 'Arten der erhobenen Daten',
+        'legal.privacy.collection.types.personal': 'Personenbezogene Daten (Name, E-Mail, Telefonnummer) bei Kontaktaufnahme oder Nutzung unserer Dienste',
+        'legal.privacy.collection.types.usage': 'Nutzungsdaten (besuchte Seiten, Verweildauer) zur Verbesserung unserer Dienste',
+        'legal.privacy.collection.types.technical': 'Technische Daten (IP-Adresse, Browser-Typ) für den Betrieb der Website',
+
+        'legal.privacy.cookies.title': 'Cookies & Tracking',
+        'legal.privacy.cookies.description': 'Wir verwenden Cookies und ähnliche Technologien, um Ihre Erfahrung auf unserer Website zu verbessern.',
+        'legal.privacy.cookies.types.title': 'Arten von Cookies',
+        'legal.privacy.cookies.types.essential': 'Notwendige Cookies: Erforderlich für die grundlegende Funktionalität der Website',
+        'legal.privacy.cookies.types.analytics': 'Analyse-Cookies: Helfen uns zu verstehen, wie Besucher unsere Website nutzen',
+        'legal.privacy.cookies.types.marketing': 'Marketing-Cookies: Für relevante Werbung (nur mit Ihrer Einwilligung)',
+
+        'legal.privacy.thirdparty.title': 'Dienste Dritter',
+        'legal.privacy.thirdparty.description': 'Wir nutzen ausgewählte Dienste Dritter zur Erweiterung unserer Website-Funktionalität.',
+        'legal.privacy.thirdparty.services.analytics': 'Google Analytics: Zur Analyse des Website-Verkehrs',
+        'legal.privacy.thirdparty.services.social': 'Social Media: Integration von Social-Media-Funktionen',
+        'legal.privacy.thirdparty.services.payment': 'Zahlungsabwicklung: Sichere Zahlungsabwicklung durch zertifizierte Anbieter',
+
+        'legal.privacy.rights.title': 'Ihre Rechte nach DSGVO',
+        'legal.privacy.rights.intro': 'Nach der DSGVO haben Sie folgende Rechte bezüglich Ihrer personenbezogenen Daten:',
+        'legal.privacy.rights.access': 'Recht auf Auskunft',
+        'legal.privacy.rights.rectification': 'Recht auf Berichtigung',
+        'legal.privacy.rights.erasure': 'Recht auf Löschung ("Recht auf Vergessenwerden")',
+        'legal.privacy.rights.restriction': 'Recht auf Einschränkung der Verarbeitung',
+        'legal.privacy.rights.portability': 'Recht auf Datenübertragbarkeit',
+        'legal.privacy.rights.object': 'Recht auf Widerspruch gegen die Verarbeitung',
+
+        'legal.privacy.security.title': 'Datensicherheit',
+        'legal.privacy.security.measures': 'Wir setzen angemessene technische und organisatorische Maßnahmen zur Gewährleistung der Datensicherheit ein.',
+        'legal.privacy.security.encryption': 'Alle Daten werden über eine sichere SSL-Verschlüsselung übertragen.',
+        'legal.privacy.security.staff': 'Unsere Mitarbeiter sind im Datenschutz geschult und zur Vertraulichkeit verpflichtet.',
+
+        'legal.terms.title': 'Allgemeine Geschäftsbedingungen',
+        'legal.terms.description': 'Allgemeine Geschäftsbedingungen für unsere Dienstleistungen',
+
+        'legal.terms.general.title': 'Allgemeine Bestimmungen',
+        'legal.terms.general.scope': 'Diese AGB regeln alle Geschäftsbeziehungen zwischen uns und unseren Kunden.',
+        'legal.terms.general.validity': 'Abweichende Bedingungen des Kunden finden keine Anwendung, sofern nicht ausdrücklich schriftlich zugestimmt wurde.',
+
+        'legal.terms.services.title': 'Leistungen',
+        'legal.terms.services.description': 'Wir bieten folgende Dienstleistungen im Bereich Webentwicklung und KI-Lösungen an:',
+        'legal.terms.services.webdev': 'Entwicklung von Websites, Webanwendungen und individuellen Softwarelösungen',
+        'legal.terms.services.ai': 'KI-Integration, Chatbot-Entwicklung und Automatisierungslösungen',
+        'legal.terms.services.consulting': 'Technische Beratung und Projektmanagement',
+
+        'legal.terms.contract.title': 'Vertragsbedingungen',
+        'legal.terms.contract.conclusion.title': 'Vertragsschluss',
+        'legal.terms.contract.conclusion.content': 'Der Vertrag kommt durch unsere schriftliche Auftragsbestätigung oder mit Beginn der Leistungserbringung zustande.',
+        'legal.terms.contract.duration.title': 'Vertragsdauer',
+        'legal.terms.contract.duration.content': 'Die Vertragsdauer richtet sich nach dem individuellen Projektumfang oder der Servicevereinbarung.',
+
+        'legal.terms.payment.title': 'Preise und Zahlung',
+        'legal.terms.payment.prices': 'Alle Preise verstehen sich in Euro zuzüglich der gesetzlichen Mehrwertsteuer.',
+        'legal.terms.payment.terms': 'Zahlungen sind innerhalb von 14 Tagen ab Rechnungsdatum ohne Abzug fällig.',
+        'legal.terms.payment.methods': 'Wir akzeptieren Überweisungen und andere angegebene Zahlungsmethoden.',
+
+        'legal.terms.obligations.title': 'Rechte und Pflichten',
+        'legal.terms.obligations.provider.title': 'Unsere Pflichten',
+        'legal.terms.obligations.provider.content': 'Wir verpflichten uns, unsere Leistungen fachgerecht und nach aktuellem technischen Standard zu erbringen.',
+        'legal.terms.obligations.client.title': 'Pflichten des Kunden',
+        'legal.terms.obligations.client.content': 'Der Kunde stellt alle erforderlichen Informationen und Materialien rechtzeitig zur Verfügung.',
+
+        'legal.terms.liability.title': 'Haftung',
+        'legal.terms.liability.limitation': 'Unsere Haftung ist auf Vorsatz und grobe Fahrlässigkeit beschränkt.',
+        'legal.terms.liability.exclusions': 'Die Haftung für leichte Fahrlässigkeit ist ausgeschlossen, soweit keine wesentlichen Vertragspflichten betroffen sind.',
+
+        'legal.terms.final.title': 'Schlussbestimmungen',
+        'legal.terms.final.jurisdiction': 'Gerichtsstand ist München, Deutschland.',
+        'legal.terms.final.severability': 'Sollten einzelne Bestimmungen unwirksam sein, bleiben die übrigen Bestimmungen davon unberührt.',
     }
 } as const;
 
