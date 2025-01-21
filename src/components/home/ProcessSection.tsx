@@ -79,7 +79,7 @@ const ProcessSection: React.FC = () => {
                         <div className="absolute top-0 hidden md:flex left-1/2 -translate-x-1/2 h-full flex-col items-center w-4">
                             {/* Vertical Line with Animation */}
                             <motion.div
-                                className="absolute h-full w-1 bg-gradient-to-b from-primary/0 via-primary/15 to-primary/0"
+                                className="absolute h-full w-[2px] bg-gradient-to-b from-primary/0 via-gray-500/15 to-primary/0"
                                 initial={{ height: 0 }}
                                 whileInView={{ height: '100%' }}
                                 viewport={{ once: true }}
