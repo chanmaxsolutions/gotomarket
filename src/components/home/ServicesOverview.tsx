@@ -52,7 +52,7 @@ const ServicesOverview: React.FC = () => {
                             <p className="text-3xl font-light text-gray-300 tracking-tight">
                                 {t('services.subtitle')}
                             </p>
-                            <p className="text-xl text-gray-500 font-light max-w-3xl mx-auto">
+                            <p className="text-xl text-gray-500 font-light max-w-3xl mx-auto tracking-tight">
                                 {t('services.description')}
                             </p>
                         </div>
@@ -80,7 +80,7 @@ const ServicesOverview: React.FC = () => {
                                     <h3 className="text-4xl md:text-5xl font-bold mb-4 text-primary tracking-tighter">
                                         {t(service.title)}
                                     </h3>
-                                    <p className="text-xl text-neutral-medium font-light">
+                                    <p className="text-2xl text-neutral-medium font-light tracking-tight">
                                         {t(service.description)}
                                     </p>
                                 </motion.div>

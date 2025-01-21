@@ -101,7 +101,7 @@ const TestimonialsSection: React.FC = () => {
                                     }`} />
 
                                 {/* Content */}
-                                <p className={`text-xl md:text-2xl font-light mb-8 ${testimonial.highlight ? 'text-white/90' : 'text-gray-600'
+                                <p className={`text-xl md:text-2xl font-light tracking-tight mb-8 ${testimonial.highlight ? 'text-white/90' : 'text-gray-600'
                                     }`}>
                                     "{t(testimonial.content)}"
                                 </p>
@@ -121,12 +121,12 @@ const TestimonialsSection: React.FC = () => {
 
                                 {/* Author Info */}
                                 <div className="flex flex-col">
-                                    <span className={`font-semibold text-lg ${testimonial.highlight ? 'text-white' : 'text-gray-900'
+                                    <span className={`font-semibold tracking-tight text-xl ${testimonial.highlight ? 'text-white' : 'text-gray-900'
                                         }`}>
                                         {t(testimonial.author)}
                                     </span>
                                     <span className={
-                                        testimonial.highlight ? 'text-white/70' : 'text-gray-500'
+                                        testimonial.highlight ? 'text-white/70 tracking-tight' : 'text-gray-500 tracking-tight'
                                     }>
                                         {t(testimonial.role)}, {t(testimonial.company)}
                                     </span>

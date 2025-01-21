@@ -24,7 +24,7 @@ const CTASection: React.FC = () => {
                         <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-white mb-6">
                             {t('cta.title')}
                         </h2>
-                        <p className="text-xl text-white/80 font-light max-w-3xl mx-auto mb-12">
+                        <p className="text-3xl text-white/80 font-light max-w-3xl mx-auto mb-12 tracking-tight">
                             {t('cta.description')}
                         </p>
 
@@ -36,7 +36,7 @@ const CTASection: React.FC = () => {
                         >
                             <Link
                                 href="/get-quote"
-                                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-full text-lg hover:bg-primary/90 transition-all duration-300 group"
+                                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-full text-xl tracking-tight hover:bg-primary/90 transition-all duration-300 group"
                             >
                                 {t('cta.button')}
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />

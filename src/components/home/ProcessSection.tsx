@@ -67,7 +67,7 @@ const ProcessSection: React.FC = () => {
                             <p className="text-3xl font-light text-gray-300 tracking-tight">
                                 {t('process.subtitle')}
                             </p>
-                            <p className="text-xl text-gray-500 font-light max-w-3xl mx-auto">
+                            <p className="text-xl text-gray-500 font-light max-w-3xl mx-auto tracking-tight">
                                 {t('process.description')}
                             </p>
                         </div>
@@ -118,7 +118,7 @@ const ProcessSection: React.FC = () => {
                                     <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tighter mb-4">
                                         {t(process.title)}
                                     </h3>
-                                    <p className="text-xl text-white/80 font-light">
+                                    <p className="text-xl text-white/80 font-light tracking-tight">
                                         {t(process.description)}
                                     </p>
                                 </div>

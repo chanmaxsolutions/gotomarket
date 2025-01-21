@@ -35,27 +35,46 @@ const Footer: React.FC = () => {
                                     className="h-auto"
                                 />
                             </Link>
-                            <p className="text-gray-500 font-light">
+                            <p className="text-gray-500 tracking-tighter text-lg">
                                 {t('footer.description')}
                             </p>
+                            {/* Social Links */}
+                            <div className="flex justify-left gap-6 mb-12">
+                                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                                    className="text-gray-400 hover:text-primary transition-colors">
+                                    <Facebook className="w-6 h-6" />
+                                </a>
+                                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                                    className="text-gray-400 hover:text-primary transition-colors">
+                                    <Twitter className="w-6 h-6" />
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                                    className="text-gray-400 hover:text-primary transition-colors">
+                                    <Linkedin className="w-6 h-6" />
+                                </a>
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                                    className="text-gray-400 hover:text-primary transition-colors">
+                                    <Instagram className="w-6 h-6" />
+                                </a>
+                            </div>
                         </div>
 
                         {/* Quick Links */}
                         <div>
-                            <h3 className="text-xl font-semibold mb-6">{t('footer.quickLinks')}</h3>
+                            <h3 className="text-2xl tracking-tighter font-bold mb-6">{t('footer.quickLinks')}</h3>
                             <ul className="space-y-4">
                                 <li>
-                                    <Link href="/about" className="text-gray-500 hover:text-primary transition-colors">
+                                    <Link href="/about" className="text-gray-500 tracking-tighter text-lg hover:text-primary transition-colors">
                                         {t('footer.about')}
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/services" className="text-gray-500 hover:text-primary transition-colors">
+                                    <Link href="/services" className="text-gray-500 tracking-tighter text-lg hover:text-primary transition-colors">
                                         {t('footer.services')}
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact" className="text-gray-500 hover:text-primary transition-colors">
+                                    <Link href="/contact" className="text-gray-500 tracking-tighter text-lg hover:text-primary transition-colors">
                                         {t('footer.contact')}
                                     </Link>
                                 </li>
@@ -64,15 +83,15 @@ const Footer: React.FC = () => {
 
                         {/* Services */}
                         <div>
-                            <h3 className="text-xl font-semibold mb-6">{t('footer.services')}</h3>
+                            <h3 className="text-2xl tracking-tighter font-bold mb-6">{t('footer.services')}</h3>
                             <ul className="space-y-4">
                                 <li>
-                                    <Link href="/services/web-development" className="text-gray-500 hover:text-primary transition-colors">
+                                    <Link href="/services/web-development" className="text-gray-500 tracking-tighter text-lg hover:text-primary transition-colors">
                                         {t('footer.webDev')}
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/services/ai-solutions" className="text-gray-500 hover:text-primary transition-colors">
+                                    <Link href="/services/ai-solutions" className="text-gray-500 tracking-tighter text-lg hover:text-primary transition-colors">
                                         {t('footer.ai')}
                                     </Link>
                                 </li>
@@ -81,57 +100,50 @@ const Footer: React.FC = () => {
 
                         {/* Contact Info */}
                         <div>
-                            <h3 className="text-xl font-semibold mb-6">{t('footer.contact')}</h3>
+                            <h3 className="text-2xl tracking-tighter font-bold mb-6">{t('footer.contact')}</h3>
                             <ul className="space-y-4">
-                                <li className="flex items-center gap-2 text-gray-500">
-                                    <Mail className="w-5 h-5" />
-                                    <a href="mailto:info@example.com" className="hover:text-primary transition-colors">
-                                        info@example.com
-                                    </a>
+                                <li className="flex gap-2 text-gray-500 tracking-tighter text-lg">
+                                    <div className="flex-none w-5 h-5">
+                                        <Mail className="w-full h-full" />
+                                    </div>
+                                    <div className="flex-1">
+                                        <a href="mailto:info@example.com" className="hover:text-primary transition-colors">
+                                            info@example.com
+                                        </a>
+                                    </div>
                                 </li>
-                                <li className="flex items-center gap-2 text-gray-500">
-                                    <Phone className="w-5 h-5" />
-                                    <a href="tel:+1234567890" className="hover:text-primary transition-colors">
-                                        +123 456 7890
-                                    </a>
+                                <li className="flex gap-2 text-gray-500 tracking-tighter text-lg">
+                                    <div className="flex-none w-5 h-5">
+                                        <Phone className="w-full h-full" />
+                                    </div>
+                                    <div className="flex-1">
+                                        <a href="tel:+1234567890" className="hover:text-primary transition-colors">
+                                            +123 456 7890
+                                        </a>
+                                    </div>
                                 </li>
-                                <li className="flex items-start gap-2 text-gray-500">
-                                    <MapPin className="w-5 h-5 mt-1" />
-                                    <span>
-                                        {t('footer.address')}
-                                    </span>
+                                <li className="flex gap-2 text-gray-500 tracking-tighter text-lg">
+                                    <div className="flex-none w-5 h-5 mt-1">
+                                        <MapPin className="w-full h-full" />
+                                    </div>
+                                    <div className="flex-1">
+                                        <span>{t('footer.address')}</span>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
+
                     </div>
 
-                    {/* Social Links */}
-                    <div className="flex justify-center gap-6 mb-12">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-                            className="text-gray-400 hover:text-primary transition-colors">
-                            <Facebook className="w-6 h-6" />
-                        </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                            className="text-gray-400 hover:text-primary transition-colors">
-                            <Twitter className="w-6 h-6" />
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-                            className="text-gray-400 hover:text-primary transition-colors">
-                            <Linkedin className="w-6 h-6" />
-                        </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
-                            className="text-gray-400 hover:text-primary transition-colors">
-                            <Instagram className="w-6 h-6" />
-                        </a>
-                    </div>
+
 
                     {/* Bottom Bar */}
                     <div className="border-t border-gray-100 pt-8">
                         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                            <p className="text-gray-500 text-sm">
+                            <p className="text-gray-500 text-sm tracking-tighter">
                                 © {new Date().getFullYear()} {t('footer.copyright')}
                             </p>
-                            <div className="flex gap-6 text-sm">
+                            <div className="flex gap-6 text-sm tracking-tighter">
                                 <Link href="/privacy" className="text-gray-500 hover:text-primary transition-colors">
                                     {t('footer.privacy')}
                                 </Link>

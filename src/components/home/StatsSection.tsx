@@ -54,7 +54,7 @@ const StatsSection: React.FC = () => {
                                         {stat.value}
                                     </motion.span>
                                 </div>
-                                <p className="mt-2 text-lg text-white/80">
+                                <p className="mt-2 text-xl text-white/80 tracking-tight">
                                     {t(stat.label)}
                                 </p>
                             </motion.div>

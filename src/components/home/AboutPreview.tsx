@@ -29,7 +29,7 @@ const AboutPreview: React.FC = () => {
                             <p className="text-3xl font-light text-gray-300 tracking-tight">
                                 {t('about.subtitle')}
                             </p>
-                            <p className="text-xl text-gray-500 font-light max-w-3xl mx-auto">
+                            <p className="text-2xl text-gray-500 font-light max-w-3xl mx-auto tracking-tight">
                                 {t('about.description')}
                             </p>
                         </div>
@@ -43,7 +43,7 @@ const AboutPreview: React.FC = () => {
                         >
                             <Link
                                 href="/about"
-                                className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white rounded-full text-lg hover:bg-accent/90 transition-colors duration-200 group"
+                                className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white rounded-full text-xl tracking-tight hover:bg-accent/90 transition-colors duration-200 group"
                             >
                                 {t('about.cta')}
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
