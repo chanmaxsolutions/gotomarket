@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Go To Market - AI & Web Development Agency',
   description: 'We deliver cutting-edge web development and AI solutions that transform businesses.',
   icons: {
-    icon: 'https://res.cloudinary.com/dqeujzydw/image/upload/v1737271850/Favicon-Dark_mzwgmd.svg',
+    icon: 'https://res.cloudinary.com/dqeujzydw/image/upload/v1737469204/Artboard_3_copy_ktaihw.svg',
   },
 };
 

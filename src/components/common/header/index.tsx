@@ -63,12 +63,12 @@ export default function Header() {
                     {/* Logo */}
                     <Link href="/" className="flex-shrink-0">
                         <Image
-                            src="https://res.cloudinary.com/dqeujzydw/image/upload/v1737271850/Logo_jtwdnz.svg"
+                            src="https://res.cloudinary.com/dqeujzydw/image/upload/v1737469204/Artboard_2_tan3zh.svg"
                             alt="Go To Market"
                             width={180}
                             height={48}
                             priority
-                            className="w-auto h-12"
+                            className="w-auto h-10"
                         />
                     </Link>
 
