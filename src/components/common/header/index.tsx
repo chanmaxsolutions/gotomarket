@@ -1,7 +1,6 @@
-// src/components/common/header/index.tsx
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X, ChevronDown, Globe } from 'lucide-react';
@@ -9,7 +8,6 @@ import { motion, AnimatePresence, HTMLMotionProps } from 'framer-motion';
 import { useTranslation } from '@/hooks/useTranslation';
 import { TranslationKey } from '@/translations';
 
-// Type definitions
 interface NavigationItem {
     key: TranslationKey;
     href: string;
@@ -23,11 +21,9 @@ interface MotionDivProps extends HTMLMotionProps<"div"> {
     children: React.ReactNode;
 }
 
-// Typed motion components
 const MotionDiv = motion.div as React.FC<MotionDivProps>;
 const MotionSpan = motion.span as React.FC<HTMLMotionProps<"span">>;
 
-// Navigation configuration
 const navigation: NavigationItem[] = [
     { key: 'nav.home', href: '/' },
     {
@@ -45,7 +41,29 @@ const navigation: NavigationItem[] = [
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState<TranslationKey | null>(null);
+    const [isScrolled, setIsScrolled] = useState(false);
     const { t, language, toggleLanguage } = useTranslation();
+    const dropdownRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+                setActiveDropdown(null);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
+    }, []);
 
     const toggleDropdown = (key: TranslationKey) => {
         setActiveDropdown(activeDropdown === key ? null : key);
@@ -57,7 +75,12 @@ export default function Header() {
     };
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-neutral-light">
+        <header
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+                    ? 'bg-white/80 backdrop-blur-lg border-b border-neutral-light/50 supports-[backdrop-filter]:bg-white/60'
+                    : 'bg-white border-b border-neutral-light'
+                }`}
+        >
             <div className="container">
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
@@ -75,7 +98,7 @@ export default function Header() {
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center space-x-8">
                         {navigation.map((item) => (
-                            <div key={item.key} className="relative">
+                            <div key={item.key} className="relative" ref={dropdownRef}>
                                 {item.submenu ? (
                                     <div>
                                         <button
@@ -97,13 +120,17 @@ export default function Header() {
                                                     animate={{ opacity: 1, y: 0 }}
                                                     exit={{ opacity: 0, y: -10 }}
                                                     transition={{ duration: 0.2 }}
-                                                    className="absolute top-full left-0 mt-2 w-52 rounded-lg bg-white shadow-lg py-2"
+                                                    className={`absolute top-full left-0 mt-2 w-52 rounded-lg py-2 ${isScrolled
+                                                            ? 'bg-white/80 backdrop-blur-lg supports-[backdrop-filter]:bg-white/60'
+                                                            : 'bg-white'
+                                                        } shadow-lg`}
                                                 >
                                                     {item.submenu.map((subitem) => (
                                                         <Link
                                                             key={subitem.key}
                                                             href={subitem.href}
                                                             className="block px-4 text-xl tracking-tighter py-2 text-gray-500 hover:text-primary hover:bg-gray-50 transition-colors duration-200"
+                                                            onClick={() => setActiveDropdown(null)}
                                                         >
                                                             {t(subitem.key)}
                                                         </Link>
@@ -166,7 +193,10 @@ export default function Header() {
                             animate={{ opacity: 1, height: "auto" }}
                             exit={{ opacity: 0, height: 0 }}
                             transition={{ duration: 0.2 }}
-                            className="md:hidden border-t overflow-hidden"
+                            className={`md:hidden border-t overflow-hidden ${isScrolled
+                                    ? 'bg-white/80 backdrop-blur-lg supports-[backdrop-filter]:bg-white/60'
+                                    : 'bg-white'
+                                }`}
                         >
                             <nav className="flex flex-col space-y-4 py-4">
                                 {navigation.map((item) => (
