@@ -43,9 +43,7 @@ const ContactForm = () => {
         try {
             setSubmitError(null);
             await submitToAirtable(data);
-            setSubmitSuccess(true);
-            reset();
-            setTimeout(() => setSubmitSuccess(false), 5000);
+            window.location.href = '/thank-you';
         } catch (error) {
             setSubmitError(t('contact.form.error'));
         }
@@ -54,7 +52,7 @@ const ContactForm = () => {
     return (
         <section className="py-20 md:py-40 bg-white">
             <div className="container mx-auto px-4">
-                <div className="max-w-xl mx-auto">
+                <div className="max-w-3xl mx-auto">
                     {/* Title Section */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}

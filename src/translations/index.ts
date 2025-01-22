@@ -424,6 +424,16 @@ export type TranslationKey =
     | 'contact.form.error'
     | 'contact.form.emailInvalid'
 
+    | 'contact.info.title'
+    | 'contact.info.description'
+    | 'contact.info.email.title'
+    | 'contact.info.phone.title'
+    | 'contact.info.address.title'
+    | 'contact.info.address.content'
+    | 'thankYou.title'
+    | 'thankYou.description'
+    | 'thankYou.backHome'
+
 export const translations = {
     en: {
         'nav.home': 'Home',
@@ -874,7 +884,7 @@ export const translations = {
         'contact.page.title': 'Contact Us',
         'contact.page.description': 'Get in touch with our team',
 
-        'contact.form.title': 'Get In Touch',
+        'contact.form.title': 'Send A Message',
         'contact.form.subtitle': 'How can we help?',
         'contact.form.description': 'Fill out the form below and we\'ll get back to you as soon as possible.',
 
@@ -911,6 +921,16 @@ export const translations = {
         'contact.form.networkError': 'Network error. Please check your connection.',
         'contact.form.invalidSubmission': 'Invalid submission. Please check your inputs.',
         'contact.form.emailInvalid': 'Please enter a valid email address',
+
+        'contact.info.title': 'Get in Touch',
+        'contact.info.description': 'Contact us through any of these channels',
+        'contact.info.email.title': 'Email Us',
+        'contact.info.phone.title': 'Call Us',
+        'contact.info.address.title': 'Visit Us',
+        'contact.info.address.content': 'Example Street 123, 80333 Munich, Germany',
+        'thankYou.title': 'Thank You!',
+        'thankYou.description': 'We have received your message and will get back to you as soon as possible.',
+        'thankYou.backHome': 'Back to Home',
 
 
     },
@@ -1368,7 +1388,7 @@ export const translations = {
         'contact.page.title': 'Kontakt',
         'contact.page.description': 'Nehmen Sie Kontakt mit unserem Team auf',
 
-        'contact.form.title': 'Kontaktieren Sie Uns',
+        'contact.form.title': 'Eine Nachricht senden',
         'contact.form.subtitle': 'Wie können wir helfen?',
         'contact.form.description': 'Füllen Sie das untenstehende Formular aus und wir melden uns schnellstmöglich bei Ihnen.',
 
@@ -1403,6 +1423,16 @@ export const translations = {
         'contact.form.networkError': 'Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.',
         'contact.form.invalidSubmission': 'Ungültige Eingabe. Bitte überprüfen Sie Ihre Angaben.',
         'contact.form.emailInvalid': 'Bitte geben Sie eine gültige E-Mail-Adresse ein',
+
+        'contact.info.title': 'Kontaktieren Sie uns',
+        'contact.info.description': 'Kontaktieren Sie uns über einen dieser Kanäle',
+        'contact.info.email.title': 'E-Mail',
+        'contact.info.phone.title': 'Telefon',
+        'contact.info.address.title': 'Besuchen Sie uns',
+        'contact.info.address.content': 'Beispielstraße 123, 80333 München, Deutschland',
+        'thankYou.title': 'Vielen Dank!',
+        'thankYou.description': 'Wir haben Ihre Nachricht erhalten und werden uns in Kürze bei Ihnen melden.',
+        'thankYou.backHome': 'Zurück zur Startseite'
 
     }
 } as const;
