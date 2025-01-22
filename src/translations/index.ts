@@ -389,6 +389,41 @@ export type TranslationKey =
     | 'legal.terms.final.jurisdiction'
     | 'legal.terms.final.severability'
 
+    | 'contact.page.title'
+    | 'contact.page.description'
+
+    | 'contact.form.title'
+    | 'contact.form.subtitle'
+    | 'contact.form.description'
+    | 'contact.form.name'
+    | 'contact.form.namePlaceholder'
+    | 'contact.form.email'
+    | 'contact.form.emailPlaceholder'
+    | 'contact.form.subject'
+    | 'contact.form.subjectPlaceholder'
+    | 'contact.form.message'
+    | 'contact.form.messagePlaceholder'
+    | 'contact.form.submit'
+    | 'contact.form.phonePlaceholder'
+    | 'contact.form.inquiryType'
+    | 'contact.form.services.webdev'
+    | 'contact.form.services.ai'
+    | 'contact.form.sending'
+    | 'contact.form.nameRequired'
+    | 'contact.form.emailRequired'
+    | 'contact.form.phoneRequired'
+    | 'contact.form.inquiryRequired'
+    | 'contact.form.messageRequired'
+    | 'contact.form.error'
+
+    | 'contact.form.rateLimit'
+    | 'contact.form.networkError'
+    | 'contact.form.invalidSubmission'
+
+    | 'contact.form.success'
+    | 'contact.form.error'
+    | 'contact.form.emailInvalid'
+
 export const translations = {
     en: {
         'nav.home': 'Home',
@@ -835,6 +870,47 @@ export const translations = {
         'legal.terms.final.title': 'Final Provisions',
         'legal.terms.final.jurisdiction': 'Place of jurisdiction is Munich, Germany.',
         'legal.terms.final.severability': 'Should individual provisions be invalid, the remaining provisions shall remain unaffected.',
+
+        'contact.page.title': 'Contact Us',
+        'contact.page.description': 'Get in touch with our team',
+
+        'contact.form.title': 'Get In Touch',
+        'contact.form.subtitle': 'How can we help?',
+        'contact.form.description': 'Fill out the form below and we\'ll get back to you as soon as possible.',
+
+        'contact.form.name': 'Full Name',
+        'contact.form.namePlaceholder': 'Enter your full name',
+
+        'contact.form.email': 'Email Address',
+        'contact.form.emailPlaceholder': 'Enter your email address',
+
+        'contact.form.subject': 'Subject',
+        'contact.form.subjectPlaceholder': 'What is this about?',
+
+        'contact.form.message': 'Message',
+        'contact.form.messagePlaceholder': 'Write your message here...',
+
+        'contact.form.submit': 'Send Message',
+        'contact.form.phonePlaceholder': 'Enter your phone number',
+        'contact.form.inquiryType': 'Type of Inquiry',
+        'contact.form.services.web-development': 'Web Development',
+        'contact.form.services.ai-solutions': 'AI Solutions',
+        'contact.form.sending': 'Sending...',
+        'contact.form.services.webdev': 'Web Development',
+        'contact.form.services.ai': 'AI Solutions',
+        'contact.form.nameRequired': 'Please enter your name',
+        'contact.form.emailRequired': 'Please enter your email',
+        'contact.form.phoneRequired': 'Please enter your phone number',
+        'contact.form.inquiryRequired': 'Please select an inquiry type',
+        'contact.form.messageRequired': 'Please enter your message',
+        'contact.form.error': 'An error occurred. Please try again.',
+        'contact.form.success': 'Message sent successfully! We\'ll get back to you soon.',
+
+
+        'contact.form.rateLimit': 'Too many submissions. Please try again later.',
+        'contact.form.networkError': 'Network error. Please check your connection.',
+        'contact.form.invalidSubmission': 'Invalid submission. Please check your inputs.',
+        'contact.form.emailInvalid': 'Please enter a valid email address',
 
 
     },
@@ -1288,6 +1364,46 @@ export const translations = {
         'legal.terms.final.title': 'Schlussbestimmungen',
         'legal.terms.final.jurisdiction': 'Gerichtsstand ist München, Deutschland.',
         'legal.terms.final.severability': 'Sollten einzelne Bestimmungen unwirksam sein, bleiben die übrigen Bestimmungen davon unberührt.',
+
+        'contact.page.title': 'Kontakt',
+        'contact.page.description': 'Nehmen Sie Kontakt mit unserem Team auf',
+
+        'contact.form.title': 'Kontaktieren Sie Uns',
+        'contact.form.subtitle': 'Wie können wir helfen?',
+        'contact.form.description': 'Füllen Sie das untenstehende Formular aus und wir melden uns schnellstmöglich bei Ihnen.',
+
+        'contact.form.name': 'Vollständiger Name',
+        'contact.form.namePlaceholder': 'Geben Sie Ihren vollständigen Namen ein',
+
+        'contact.form.email': 'E-Mail-Adresse',
+        'contact.form.emailPlaceholder': 'Geben Sie Ihre E-Mail-Adresse ein',
+
+        'contact.form.subject': 'Betreff',
+        'contact.form.subjectPlaceholder': 'Worum geht es?',
+
+        'contact.form.message': 'Nachricht',
+        'contact.form.messagePlaceholder': 'Schreiben Sie Ihre Nachricht hier...',
+
+        'contact.form.submit': 'Nachricht Senden',
+        'contact.form.phonePlaceholder': 'Geben Sie Ihre Telefonnummer ein',
+        'contact.form.inquiryType': 'Art der Anfrage',
+        'contact.form.services.webdev': 'Webentwicklung',
+        'contact.form.services.ai': 'KI-Lösungen',
+        'contact.form.sending': 'Wird gesendet...',
+        'contact.form.nameRequired': 'Bitte geben Sie Ihren Namen ein',
+        'contact.form.emailRequired': 'Bitte geben Sie Ihre E-Mail-Adresse ein',
+        'contact.form.phoneRequired': 'Bitte geben Sie Ihre Telefonnummer ein',
+        'contact.form.inquiryRequired': 'Bitte wählen Sie eine Anfrageart aus',
+        'contact.form.messageRequired': 'Bitte geben Sie Ihre Nachricht ein',
+        'contact.form.error': 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.',
+        'contact.form.success': 'Nachricht erfolgreich gesendet! Wir werden uns in Kürze bei Ihnen melden.',
+
+
+        'contact.form.rateLimit': 'Zu viele Einreichungen. Bitte versuchen Sie es später erneut.',
+        'contact.form.networkError': 'Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.',
+        'contact.form.invalidSubmission': 'Ungültige Eingabe. Bitte überprüfen Sie Ihre Angaben.',
+        'contact.form.emailInvalid': 'Bitte geben Sie eine gültige E-Mail-Adresse ein',
+
     }
 } as const;
 
