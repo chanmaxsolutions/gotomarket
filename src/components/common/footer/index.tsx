@@ -150,6 +150,9 @@ const Footer: React.FC = () => {
                                 <Link href="/terms" className="text-gray-500 hover:text-primary transition-colors">
                                     {t('footer.terms')}
                                 </Link>
+                                <Link href="/imprint" className="text-gray-500 hover:text-primary transition-colors">
+                                    {t('footer.imprint')}
+                                </Link>
                             </div>
                         </div>
                     </div>

@@ -434,6 +434,39 @@ export type TranslationKey =
     | 'thankYou.description'
     | 'thankYou.backHome'
 
+    | 'quote.form.title'
+    | 'quote.form.subtitle'
+    | 'quote.form.description'
+    | 'quote.form.namePlaceholder'
+    | 'quote.form.nameRequired'
+    | 'quote.form.emailPlaceholder'
+    | 'quote.form.emailRequired'
+    | 'quote.form.phonePlaceholder'
+    | 'quote.form.phoneRequired'
+    | 'quote.form.companyPlaceholder'
+    | 'quote.form.companyRequired'
+    | 'quote.form.servicesLabel'
+    | 'quote.form.servicesRequired'
+    | 'quote.form.services.webdev'
+    | 'quote.form.services.ai'
+    | 'quote.form.budgetLabel'
+    | 'quote.form.budgetRequired'
+    | 'quote.form.detailsPlaceholder'
+    | 'quote.form.detailsRequired'
+    | 'quote.form.sending'
+    | 'quote.form.submit'
+    | 'quote.form.error'
+    | 'quote.form.backHome'
+
+    | 'quote.thankyou.backHome'
+    | 'quote.thankyou.title'
+    | 'quote.thankyou.subtitle'
+    | 'quote.thankyou.description'
+    | 'quote.thankyou.returnHome'
+
+    | 'footer.imprint'
+
+
 export const translations = {
     en: {
         'nav.home': 'Home',
@@ -931,6 +964,46 @@ export const translations = {
         'thankYou.title': 'Thank You!',
         'thankYou.description': 'We have received your message and will get back to you as soon as possible.',
         'thankYou.backHome': 'Back to Home',
+
+        'quote.form.title': 'Get a Quote',
+        'quote.form.subtitle': 'Start Your Project',
+        'quote.form.description': 'Tell us about your project and we\'ll get back to you within 24 hours with a free quote.',
+
+        'quote.form.namePlaceholder': 'Full Name',
+        'quote.form.nameRequired': 'Please enter your name',
+
+        'quote.form.emailPlaceholder': 'Email Address',
+        'quote.form.emailRequired': 'Please enter your email',
+
+        'quote.form.phonePlaceholder': 'Phone Number',
+        'quote.form.phoneRequired': 'Please enter your phone number',
+
+        'quote.form.companyPlaceholder': 'Company Name',
+        'quote.form.companyRequired': 'Please enter your company name',
+
+        'quote.form.servicesLabel': 'Services Required',
+        'quote.form.servicesRequired': 'Please select at least one service',
+
+        'quote.form.services.webdev': 'Web Development',
+        'quote.form.services.ai': 'AI Solutions',
+
+        'quote.form.budgetLabel': 'Project Budget',
+        'quote.form.budgetRequired': 'Please select your budget range',
+
+        'quote.form.detailsPlaceholder': 'Tell us about your project requirements and goals...',
+        'quote.form.detailsRequired': 'Please provide project details',
+
+        'quote.form.sending': 'Sending...',
+        'quote.form.submit': 'Submit Request',
+        'quote.form.error': 'Failed to submit request. Please try again.',
+        'quote.form.backHome': 'Back to Home',
+
+        'quote.thankyou.backHome': 'Back to Home',
+        'quote.thankyou.title': 'Quote Request Received!',
+        'quote.thankyou.subtitle': 'Thank you for choosing us',
+        'quote.thankyou.description': 'We\'ll review your project requirements and send you a detailed quote within 24 hours. Our team is excited to help bring your vision to life!',
+        'quote.thankyou.returnHome': 'Return to Homepage',
+        'footer.imprint': 'Imprint',
 
 
     },
@@ -1432,7 +1505,47 @@ export const translations = {
         'contact.info.address.content': 'Beispielstraße 123, 80333 München, Deutschland',
         'thankYou.title': 'Vielen Dank!',
         'thankYou.description': 'Wir haben Ihre Nachricht erhalten und werden uns in Kürze bei Ihnen melden.',
-        'thankYou.backHome': 'Zurück zur Startseite'
+        'thankYou.backHome': 'Zurück zur Startseite',
+
+        'quote.form.title': 'Angebot anfordern',
+        'quote.form.subtitle': 'Starten Sie Ihr Projekt',
+        'quote.form.description': 'Erzählen Sie uns von Ihrem Projekt und wir melden uns innerhalb von 24 Stunden mit einem kostenlosen Angebot.',
+
+        'quote.form.namePlaceholder': 'Vollständiger Name',
+        'quote.form.nameRequired': 'Bitte geben Sie Ihren Namen ein',
+
+        'quote.form.emailPlaceholder': 'E-Mail-Adresse',
+        'quote.form.emailRequired': 'Bitte geben Sie Ihre E-Mail-Adresse ein',
+
+        'quote.form.phonePlaceholder': 'Telefonnummer',
+        'quote.form.phoneRequired': 'Bitte geben Sie Ihre Telefonnummer ein',
+
+        'quote.form.companyPlaceholder': 'Firmenname',
+        'quote.form.companyRequired': 'Bitte geben Sie Ihren Firmennamen ein',
+
+        'quote.form.servicesLabel': 'Gewünschte Dienstleistungen',
+        'quote.form.servicesRequired': 'Bitte wählen Sie mindestens eine Dienstleistung aus',
+
+        'quote.form.services.webdev': 'Webentwicklung',
+        'quote.form.services.ai': 'KI-Lösungen',
+
+        'quote.form.budgetLabel': 'Projektbudget',
+        'quote.form.budgetRequired': 'Bitte wählen Sie Ihre Budgetspanne aus',
+
+        'quote.form.detailsPlaceholder': 'Erzählen Sie uns von Ihren Projektanforderungen und Zielen...',
+        'quote.form.detailsRequired': 'Bitte geben Sie Projektdetails an',
+
+        'quote.form.sending': 'Wird gesendet...',
+        'quote.form.submit': 'Anfrage senden',
+        'quote.form.error': 'Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut.',
+        'quote.form.backHome': 'Zurück zur Startseite',
+
+        'quote.thankyou.backHome': 'Zurück zur Startseite',
+        'quote.thankyou.title': 'Angebotsanfrage erhalten!',
+        'quote.thankyou.subtitle': 'Danke, dass Sie sich für uns entschieden haben',
+        'quote.thankyou.description': 'Wir werden Ihre Projektanforderungen prüfen und Ihnen innerhalb von 24 Stunden ein detailliertes Angebot zusenden. Unser Team freut sich darauf, Ihre Vision zum Leben zu erwecken!',
+        'quote.thankyou.returnHome': 'Zur Startseite',
+        'footer.imprint': 'Impressum'
 
     }
 } as const;

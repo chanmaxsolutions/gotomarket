@@ -52,7 +52,7 @@ const ContactForm = () => {
     return (
         <section className="py-20 md:py-40 bg-white">
             <div className="container mx-auto px-4">
-                <div className="max-w-3xl mx-auto">
+                <div className="max-w-2xl mx-auto">
                     {/* Title Section */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -94,7 +94,7 @@ const ContactForm = () => {
                             </div>
                         )}
 
-                        <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
+                        <form onSubmit={handleSubmit(onSubmit)} className="space-y-8 tracking-tighter">
                             {/* Personal Information */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
