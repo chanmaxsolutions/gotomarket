@@ -5,6 +5,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { ChevronDown, Search } from 'lucide-react';
 
 const countryCodes = [
+    { code: '+49', country: 'Germany' }, // Moved Germany to top
     { code: '+1', country: 'United States' },
     { code: '+1', country: 'Canada' },
     { code: '+20', country: 'Egypt' },
@@ -24,7 +25,6 @@ const countryCodes = [
     { code: '+46', country: 'Sweden' },
     { code: '+47', country: 'Norway' },
     { code: '+48', country: 'Poland' },
-    { code: '+49', country: 'Germany' },
     { code: '+51', country: 'Peru' },
     { code: '+52', country: 'Mexico' },
     { code: '+53', country: 'Cuba' },
@@ -117,16 +117,13 @@ interface CountryCodeSelectProps {
 const CountryCodeSelect: React.FC<CountryCodeSelectProps> = ({ onChange }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [search, setSearch] = useState('');
-    const [selectedCode, setSelectedCode] = useState('');
+    const [selectedCode, setSelectedCode] = useState('+49'); // Set default to Germany
     const dropdownRef = useRef<HTMLDivElement>(null);
 
-    const filteredCodes = countryCodes.filter(
-        item =>
-            item.country.toLowerCase().includes(search.toLowerCase()) ||
-            item.code.includes(search)
-    );
-
     useEffect(() => {
+        // Set initial value
+        onChange('+49');
+
         const handleClickOutside = (event: MouseEvent) => {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
                 setIsOpen(false);
@@ -135,7 +132,13 @@ const CountryCodeSelect: React.FC<CountryCodeSelectProps> = ({ onChange }) => {
 
         document.addEventListener('mousedown', handleClickOutside);
         return () => document.removeEventListener('mousedown', handleClickOutside);
-    }, []);
+    }, [onChange]);
+
+    const filteredCodes = countryCodes.filter(
+        item =>
+            item.country.toLowerCase().includes(search.toLowerCase()) ||
+            item.code.includes(search)
+    );
 
     const handleSelect = (code: string) => {
         setSelectedCode(code);
@@ -150,8 +153,8 @@ const CountryCodeSelect: React.FC<CountryCodeSelectProps> = ({ onChange }) => {
                 onClick={() => setIsOpen(!isOpen)}
                 className="w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-primary text-left flex items-center justify-between"
             >
-                <span className={selectedCode ? 'text-gray-900' : 'text-gray-500'}>
-                    {selectedCode || 'Select Code'}
+                <span className="text-gray-900">
+                    {selectedCode}
                 </span>
                 <ChevronDown className={`w-5 h-5 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
             </button>
