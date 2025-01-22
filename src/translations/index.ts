@@ -466,6 +466,11 @@ export type TranslationKey =
 
     | 'footer.imprint'
 
+    | 'cookie.text'
+    | 'cookie.link'
+    | 'cookie.accept'
+    | 'cookie.deny';
+
 
 export const translations = {
     en: {
@@ -1004,6 +1009,11 @@ export const translations = {
         'quote.thankyou.description': 'We\'ll review your project requirements and send you a detailed quote within 24 hours. Our team is excited to help bring your vision to life!',
         'quote.thankyou.returnHome': 'Return to Homepage',
         'footer.imprint': 'Imprint',
+
+        'cookie.text': 'We use cookies to improve your experience on our site.',
+        'cookie.link': 'Learn more in our Privacy Policy',
+        'cookie.accept': 'Accept Cookies',
+        'cookie.deny': 'Deny',
 
 
     },
@@ -1545,7 +1555,12 @@ export const translations = {
         'quote.thankyou.subtitle': 'Danke, dass Sie sich für uns entschieden haben',
         'quote.thankyou.description': 'Wir werden Ihre Projektanforderungen prüfen und Ihnen innerhalb von 24 Stunden ein detailliertes Angebot zusenden. Unser Team freut sich darauf, Ihre Vision zum Leben zu erwecken!',
         'quote.thankyou.returnHome': 'Zur Startseite',
-        'footer.imprint': 'Impressum'
+        'footer.imprint': 'Impressum',
+
+        'cookie.text': 'Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern.',
+        'cookie.link': 'Erfahren Sie mehr in unserer Datenschutzerklärung',
+        'cookie.accept': 'Cookies Akzeptieren',
+        'cookie.deny': 'Ablehnen',
 
     }
 } as const;
